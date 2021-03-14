@@ -1,0 +1,15 @@
+parser: '@typescript-eslint/parser'
+settings:
+  import/parsers:
+    '@typescript-eslint/parser':
+      - .js
+      - .jsx
+      - .ts
+      - .tsx
+plugins:
+  - '@typescript-eslint'
+  - 'sonarjs'
+extends:
+  - 'plugin:@typescript-eslint/recommended'
+  - 'plugin:import/typescript'
+  - 'plugin:sonarjs/recommended'
